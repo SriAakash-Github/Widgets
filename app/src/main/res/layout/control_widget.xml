@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.WidgetTypesDemo.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center">
+
+    <!-- Widget Title -->
+    <TextView
+        android:id="@+id/widget_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control Widget"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="Control Widget Title" />
+
+    <!-- Control Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="Action"
+            android:textSize="10sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="?android:attr/textColorPrimary"
+            android:contentDescription="Action Button"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="Settings"
+            android:textSize="10sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="?android:attr/textColorPrimary"
+            android:contentDescription="Settings Button"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+    <!-- Toggle Switch -->
+    <Button
+        android:id="@+id/btn_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="OFF"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="?android:attr/textColorSecondary"
+        android:contentDescription="Feature Toggle"
+        android:layout_marginBottom="4dp"
+        style="?android:attr/buttonBarButtonStyle" />
+
+    <!-- Status Text -->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feature: Disabled"
+        android:textSize="9sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:gravity="center"
+        android:contentDescription="Feature Status" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.WidgetTypesDemo.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    android:theme="@style/Theme.WidgetTypesDemo.AppWidgetContainer">
+
+    <ImageView
+        android:id="@+id/widget_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="4dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        android:contentDescription="Clock icon"
+        android:alpha="0.7" />
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        style="@style/Widget.WidgetTypesDemo.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:contentDescription="Current date and time"
+        android:text="Loading..."
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="3"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/widget_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Info Widget"
+        android:textSize="10sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:alpha="0.6" />
+
+</LinearLayout>

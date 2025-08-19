@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WidgetTypesDemo</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">Information widget showing current date and time</string>
+    <string name="control_widget_description">Control widget with interactive buttons and toggles</string>
+    <string name="collection_widget_description">Collection widget displaying a scrollable list of items</string>
+    <string name="hybrid_widget_description">Hybrid widget combining media player info with playback controls</string>
+</resources>
